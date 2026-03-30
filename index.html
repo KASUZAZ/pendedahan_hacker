@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kesedaran Siber | Bahaya Hacker</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <header>
+        <div class="container navbar">
+            <div class="logo">ANCAMAN<span>SIBER</span></div>
+            <nav>
+                <ul>
+                    <li><a href="#utama">Utama</a></li>
+                    <li><a href="#server">Bahaya Server</a></li>
+                    <li><a href="#masyarakat">Kesan Sosial</a></li>
+                    <li><a href="#kod">Kod Program</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="utama" class="hero">
+        <div class="hero-overlay">
+            <div class="container">
+                <h2>DUNIA DIGITAL DALAM ANCAMAN</h2>
+                <p>Hacker tidak pernah tidur. Fahami bagaimana satu baris kod boleh melumpuhkan ekonomi dan mendedahkan privasi anda kepada dunia.</p>
+                <a href="#server" class="btn">Ketahui Lebih Lanjut</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="server" class="content-section container">
+        <div class="info-flex">
+            <div class="info-text">
+                <h2><i class="fas fa-shield-virus"></i> Bahaya Kepada Server</h2>
+                <p>Server adalah jantung kepada mana-mana organisasi. Apabila hacker berjaya menembusi kubu pertahanan server, kesannya amat dahsyat:</p>
+                <ul>
+                    <li><strong>Kebocoran Data (Data Breach):</strong> Maklumat sulit pelanggan seperti nombor kad kredit dan kata laluan dicuri untuk dijual di Dark Web.</li>
+                    <li><strong>Serangan DDoS:</strong> Membanjiri trafik server sehingga sistem "crash" dan perniagaan kerugian jutaan ringgit dalam masa beberapa jam.</li>
+                    <li><strong>Ransomware:</strong> Mengunci seluruh pangkalan data dan meminta bayaran tebusan yang tinggi.</li>
+                </ul>
+            </div>
+            <div class="info-image">
+                <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc51?auto=format&fit=crop&w=600" alt="Server Under Attack">
+            </div>
+        </div>
+    </section>
+
+    <section id="masyarakat" class="content-section container alt-bg">
+        <div class="info-flex reverse">
+            <div class="info-text">
+                <h2><i class="fas fa-user-slash"></i> Kesan Kepada Masyarakat</h2>
+                <p>Hacker bukan sahaja menyerang syarikat besar, malah individu biasa seperti anda juga menjadi sasaran utama melalui:</p>
+                <ul>
+                    <li><strong>Kecurian Identiti:</strong> Hacker menggunakan maklumat peribadi anda untuk membuat pinjaman bank atau melakukan jenayah atas nama anda.</li>
+                    <li><strong>Phishing:</strong> Taktik penipuan emel atau SMS yang kelihatan rasmi untuk mencuri akses akaun media sosial dan perbankan.</li>
+                    <li><strong>Gangguan Infrastruktur:</strong> Serangan ke atas sistem elektrik atau air negara yang boleh melumpuhkan kehidupan harian rakyat.</li>
+                </ul>
+            </div>
+            <div class="info-image">
+                <img src="https://images.unsplash.com/photo-1563986768609-322da13575f3?auto=format&fit=crop&w=600" alt="Cybercrime Impact">
+            </div>
+        </div>
+    </section>
+
+    <section id="kod" class="code-section">
+        <div class="container">
+            <h2 class="section-title">Bahasa Program & Eksploitasi</h2>
+            <p class="subtitle">Hacker menggunakan bahasa pengaturcaraan untuk mencari kelemahan dalam logik sistem.</p>
+            
+            <div class="code-grid">
+                <div class="code-card">
+                    <div class="card-header">Python (Port Scanner)</div>
+                    <pre><code>import socket
+# Mencari lubang terbuka pada server
+target = "192.168.1.1"
+for port in range(1, 1024):
+    s = socket.socket()
+    if s.connect_ex((target, port)) == 0:
+        print(f"Port {port} Terdedah!")
+    s.close()</code></pre>
+                </div>
+
+                <div class="code-card">
+                    <div class="card-header">SQL Injection (Bypass Login)</div>
+                    <pre><code>-- Teknik memintas log masuk admin
+SELECT * FROM users 
+WHERE username = 'admin' 
+AND password = '' OR '1'='1';
+-- '1'='1' sentiasa benar, akses dibenarkan!</code></pre>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Portal Kesedaran Siber. Hak Cipta Terpelihara.</p>
+            <p class="credit">Dicipta oleh: <strong>KASUZAZ</strong></p>
+        </div>
+    </footer>
+
+</body>
+</html>
